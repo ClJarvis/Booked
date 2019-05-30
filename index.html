@@ -11,11 +11,17 @@
 	<h2>William's Login Information</h2>
 	<P></P>
 	<form id="form_id" method="POST" name="loginForm">
+	<div>
 	<label>USERNAME</label>
-	<input type="text" name="username" id='username' placeholder="Username"><br>
+	<input type="text" name="username" id='username'>
+	</div>
+	<div>
 	<label>PASSWORD</label>
-	<input type="text" name="password" id="password" placeholder="Password">
+	<input type="password" name="password" id="Apassword">
+	<!-- Password reveal toogle -->
+	<input type="checkbox" onclick="showPassword()">Show Password
 	<input type="button" value="Log in" id="submit" onclick="validate()">
+	</div>
 	</form>
 	</div>
 </div>

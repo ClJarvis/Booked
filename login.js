@@ -1,7 +1,7 @@
 function validate() {
  	var username = document.getElementById("username").value;
  	var password = document.getElementById("Apassword").value;
-    if (username === "BOB" && password === "2525"){
+    if (username === "2019" && password === "2525"){
 		
 	window.location = "success.html"; 
 	return false;

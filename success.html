@@ -2,15 +2,62 @@
 <head>
 <title>William's Login Practice</title>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylesPUR.css">
 </head>
 
 <body>
 <div class="container">
-	<div class="main success">
-		<H3>You are logged into Booked!</H3>
-		<img src="https://yodaarchives.files.wordpress.com/2019/02/spider-ham_fig_upsidedown.jpg" width="275px">
+
+
+<h1 id="welcome">"Welcome to the Book Nook!"</h1>
+	<div class="login-screen" >
+		<h1>"Hello Young Reader!"</h1>
+		Click the button for a cool quote about Reading.
+<!-- animate drop in text BOOKS 
+	<div class="outer">
+		<div class="booktext" data-text="BOOKS!">BOOKS!</div>
+		<span class="gradient"></span>
+		<span class="spotlight"></span>
 	</div>
+
+-->
+<P></P>
+<input type="submit" value="Thoughts on reading." class="btn btn-primary btn-large btn-block" id="submit" onclick="inspireQuote();">
+		 <a href='index.html' class="logout">Logout</a>
+	</div>
+	<div height='20px'>
+	</div>
+
+	<div class="quote-screen " id="inspire">
+		<!-- Quote displays Here -->
+		<h1>Why you should read</h1>
+	</div>
+
+<script>
+	var quotes = [
+	"\“Reading without reflecting is like eating without digesting.\” \<b><sub>– Edmund Burke\</sub></b>",
+	"\“Books are a uniquely portable magic.\” \<b><sub>– Stephen King\</sub></b>",
+	"\“Reading is to the mind what exercise is to the body.\” \<b><sub>– Richard Steele\</sub></b>",
+	"\“Reading is a discount ticket to everywhere.\”  \<b><sub>– Mary Schmich\</sub></b>",
+	"\“Once you learn to read, you will be forever free\”  \<b><sub>– Frederick Douglass\</sub></b>",
+	"\"Today a reader, tomorrow a leader.\" \<b><sub>– Margaret Fuller\</sub></b>",
+	"\“There is more treasure in books than in all the pirate’s loot on Treasure Island.\” \<b><sub>– Walt Disney\</sub></b>",
+	"\“You can find magic wherever you look.  Sit back and relax all you need is a book!\” \<b><sub>– Dr. Seuss\</sub></b>",
+	"\"If you are going to get anywhere in life you have to read a lot of books.\” \<b><sub>– Roald Dahl\</sub></b>",
+	"\"No entertainment is so cheap as reading, nor any pleasure so lasting.\" \<b><sub>— Lady Montagu\</sub></b>"
+
+]
+
+
+function inspireQuote() {
+	var randomNumber = Math.floor(Math.random() * (quotes.length));
+	document.getElementById('inspire').innerHTML = quotes[randomNumber];
+	inspire.style.display = "block";
+	
+
+}
+</script>
+
 	</div>
 </body>
 </html>

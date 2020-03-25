@@ -1,14 +1,13 @@
 <html>
 <head>
-<title>William's Login Practice</title>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylesPUR.css">
 </head>
 
 <body>
-<div class="container">
-	<div class="main">
-	<h2>William's Login Information</h2>
+<!-- div class="container">
+	<div class="app-title">
+	<h2>OLP Login Information</h2>
 	<P></P>
 	<form id="form_id" method="POST" name="loginForm">
 	<div>
@@ -18,13 +17,43 @@
 	<div>
 	<label>PASSWORD</label>
 	<input type="password" name="password" id="Apassword">
-	<!-- Password reveal toogle -->
+	<-- Password reveal toogle --
 	<input type="checkbox" onclick="showPassword()">Show Password
 	<input type="button" value="Log in" id="submit" onclick="validate()">
 	</div>
 	</form>
 	</div>
-</div>
+</div -->
+
+	<form  id="form_id" method="POST" name="loginForm">
+	<h1 id="welcome">"Welcome to Book Nook!"</h1>
+	<div class="login-screen">
+		<div class="app-title">
+			<h1>Student Login</h1>
+		</div>
+		<div class="login-form">
+		<div class="control-group"> 
+		<input type="text" class="login-field" value="" placeholder="username" name="username" id="username">
+		<label class="login-field-icon fui-user" for="login-name"></label></div>
+		<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="password" name="password" id="Apassword">
+		<label class="login-field-icon fui-lock" for="login-pass"></label></div>
+		<!-- Password reveal toogle -->
+		<input type="checkbox" class="checkbox" onclick="showPassword()"><span class='showPassword'>Show Password</span>
+		<p>
+	<input type="button" value="Log in" id="submit" class="btn btn-primary btn-large btn-block" onclick="validate()">
+		<div class="app-title">
+			<h1>Instructions</h1>
+		
+				Use the following to login to Book Nook.<br>
+				<b>Username:</b> 123452020
+				<b>Password:</b> 1/1/2020<br>
+				Then click Log In.<br>
+		</div>
+		
+	</div>
+	</div>
+	</form>
 
 
 <script src='login.js'></script>
